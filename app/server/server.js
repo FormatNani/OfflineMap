@@ -10,7 +10,7 @@ function start(route, handle) {
         let postData = "";
         let pathname = url.parse(req.url).pathname;
         if (pathname != '/favicon.ico') {
-            console.log("Request for " + pathname + " received.");
+           // console.log("Request for " + pathname + " received.");
 
             route(handle, pathname, res, req);
         }
